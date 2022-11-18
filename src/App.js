@@ -16,6 +16,16 @@ function App() {
     setShowMore(!showMore)
   }
 
+  if (tours.length === 0) {
+    return (
+      <main>
+        <div className="title">
+          <h2>no tours left</h2>
+          <button className="btn" onClick={() => window.location.reload(false)}>Click to reload</button>
+        </div>
+      </main>
+    )
+  }
   return (
     <main>
       <div className="title">
@@ -44,6 +54,7 @@ function App() {
       </section>
     </main>
   );
+
 }
 
 export default App;

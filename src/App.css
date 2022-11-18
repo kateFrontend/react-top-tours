@@ -43,7 +43,7 @@ Variables
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
-  --fixed-width: 620px;
+  --fixed-width: 850px;
 }
 /*
 =============== 
@@ -165,7 +165,7 @@ main {
   margin-bottom: 4rem;
 }
 .underline {
-  width: 6rem;
+  width: 10rem;
   height: 0.25rem;
   background: var(--clr-primary-5);
   margin-left: auto;
@@ -184,7 +184,7 @@ main {
 }
 .single-tour img {
   width: 100%;
-  height: 20rem;
+  height: 25rem;
   object-fit: cover;
   border-top-right-radius: var(--radius);
   border-top-left-radius: var(--radius);
@@ -207,6 +207,8 @@ main {
   cursor: pointer;
   padding-left: 0.25rem;
 }
+
+
 .tour-price {
   color: var(--clr-primary-5);
   background: var(--clr-primary-10);
@@ -226,4 +228,10 @@ main {
   border: 1px solid var(--clr-red-dark);
   padding: 0.25rem 0.5rem;
   border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+.single-tour .delete-btn:hover {
+  color: var(--clr-white);
+  background: var(--clr-red-dark);
 }
